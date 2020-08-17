@@ -1,2 +1,2 @@
 # AtriocRacing
- A boomer game
+ A game made for a boomer
