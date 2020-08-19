@@ -7,6 +7,17 @@ TagManager:
   - shock
   - heal
   - end
+  - brown
+  - red
+  - blue
+  - green
+  - purple
+  - orange
+  - yellow
+  - grey
+  - cyan
+  - black
+  - blockade
   layers:
   - Default
   - TransparentFX

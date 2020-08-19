@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerHealth : MonoBehaviour
 {
@@ -14,12 +15,14 @@ public class PlayerHealth : MonoBehaviour
             case "heal":
                 if (health <= 100f)
                 {
-                    health++;
+                    health += .5f ;
                 }
                 break;
             case "end":
-                Debug.Log("You Finished Pog");
+                CompletionManager.check[SceneManager.GetActiveScene().buildIndex] = true;
+                SceneManager.LoadScene(1);
                 break;
         }
+        Debug.Log(collision.gameObject.tag);
     }
 }
